@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GETAPIs.GetAPIsTestWithBDD">
+      <class name="GETAPIs.GetCallPathParameterswithDataProviders">
         <methods>
-          <include name="getProductsTest"/>
+          <include name="getCircuitCountFormulaOneTest" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- GETAPIs.GetAPIsTestWithBDD -->
+      </class> <!-- GETAPIs.GetCallPathParameterswithDataProviders -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
