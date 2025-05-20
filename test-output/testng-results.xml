@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-15T18:27:52 CDT" name="Default suite" finished-at="2025-05-15T18:27:56 CDT" duration-ms="3722">
+  <suite started-at="2025-05-19T23:30:00 CDT" name="Default suite" finished-at="2025-05-19T23:30:06 CDT" duration-ms="5621">
     <groups>
     </groups>
-    <test started-at="2025-05-15T18:27:52 CDT" name="Default test" finished-at="2025-05-15T18:27:56 CDT" duration-ms="3722">
-      <class name="GETAPIs.GetCallPathParameterswithDataProviders">
-        <test-method signature="getCircuitCountFormulaOneTestwithoutdataproviders()[pri:0, instance:GETAPIs.GetCallPathParameterswithDataProviders@750e2b97]" started-at="2025-05-15T18:27:52 CDT" name="getCircuitCountFormulaOneTestwithoutdataproviders" finished-at="2025-05-15T18:27:56 CDT" duration-ms="3667" status="PASS">
+    <test started-at="2025-05-19T23:30:00 CDT" name="Default test" finished-at="2025-05-19T23:30:06 CDT" duration-ms="5621">
+      <class name="POSTAPIs.PostAndGetUser">
+        <test-method signature="getAllUsersWithQueryParametersTest()[pri:0, instance:POSTAPIs.PostAndGetUser@1e0b4072]" started-at="2025-05-19T23:30:00 CDT" name="getAllUsersWithQueryParametersTest" finished-at="2025-05-19T23:30:06 CDT" duration-ms="5559" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getCircuitCountFormulaOneTestwithoutdataproviders -->
-      </class> <!-- GETAPIs.GetCallPathParameterswithDataProviders -->
+        </test-method> <!-- getAllUsersWithQueryParametersTest -->
+      </class> <!-- POSTAPIs.PostAndGetUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
