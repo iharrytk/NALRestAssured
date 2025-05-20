@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GETAPIs.GetCallPathParameterswithDataProviders">
+      <class name="POSTAPIs.PostAndGetUser">
         <methods>
-          <include name="getCircuitCountFormulaOneTest" invocation-numbers="0 1 2 3"/>
+          <include name="getAllUsersWithQueryParametersTest"/>
         </methods>
-      </class> <!-- GETAPIs.GetCallPathParameterswithDataProviders -->
+      </class> <!-- POSTAPIs.PostAndGetUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

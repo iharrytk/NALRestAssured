@@ -60,7 +60,7 @@ public class GetAPIsTestWithBDD {
 									.and()
 										.body("$.id", is(notNullValue()))
 											.and()
-												.body("name", hasItem("Adhiraj Pillai"));
+												.body("name", hasItem("Baala Kapoor"));
 								
 						
 		
