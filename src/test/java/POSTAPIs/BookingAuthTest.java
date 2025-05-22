@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.given;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import POJOs.RestfullbookerPOJO;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import java.io.*;
@@ -66,6 +67,29 @@ public class BookingAuthTest {
 		
 		
 		
+	}
+	
+	
+	@Test
+	public void getBookingauthTokenTest_with_JSONPOJO() {
+		
+		RestAssured.baseURI="https://restful-booker.herokuapp.com";
+		
+		RestfullbookerPOJO obj=new RestfullbookerPOJO("admin","password123");
+		String token=given()
+		.contentType(ContentType.JSON)
+		.body(obj)
+		.when()
+		.post("/auth")
+		.then()
+		.assertThat()
+		.statusCode(200)
+		.extract()
+		.path("token");
+		
+		
+		System.out.println("The token of restfuull booker is:"+token);
+			
 	}
 
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POSTAPIs.PostAndGetUser">
+      <class name="POSTAPIs.PostAndGetUserPOJO">
         <methods>
-          <include name="getAllUsersWithQueryParametersTest"/>
+          <include name="postAndGetUser_with_JSONPOJO"/>
         </methods>
-      </class> <!-- POSTAPIs.PostAndGetUser -->
+      </class> <!-- POSTAPIs.PostAndGetUserPOJO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
