@@ -29,10 +29,8 @@ public class PostAndGetUser {
 				.and()
 				.body("name", equalTo("suryat"))
 				.extract()
-				.path("id");
-		
-		System.out.println("user id -->" + userid);				
-											
+				.path("id");		
+		System.out.println("user id -->" + userid);														
 		
 		given().log().all()
 			.header("Authorization","Bearer 177ad5140ea25bcba6fb5629bca244944bb45d48d68025c985cc7711aee7a597")
