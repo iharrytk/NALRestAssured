@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POSTAPIs.PostAndGetUserPOJO">
+      <class name="JsonPathValidator.FakeStoreAPIProducts">
         <methods>
-          <include name="postAndGetUser_with_JSONPOJO"/>
+          <include name="jsonValidatorProducts"/>
         </methods>
-      </class> <!-- POSTAPIs.PostAndGetUserPOJO -->
+      </class> <!-- JsonPathValidator.FakeStoreAPIProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
