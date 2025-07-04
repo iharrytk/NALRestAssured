@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-03T23:55:38 CDT" name="Default suite" finished-at="2025-07-03T23:55:41 CDT" duration-ms="3652">
+  <suite started-at="2025-07-04T16:29:57 CDT" name="Default suite" finished-at="2025-07-04T16:30:03 CDT" duration-ms="5556">
     <groups>
     </groups>
-    <test started-at="2025-07-03T23:55:38 CDT" name="Default test" finished-at="2025-07-03T23:55:41 CDT" duration-ms="3652">
+    <test started-at="2025-07-04T16:29:57 CDT" name="Default test" finished-at="2025-07-04T16:30:03 CDT" duration-ms="5556">
       <class name="com.qa.user.CreateUserTest">
-        <test-method signature="createUser()[pri:0, instance:com.qa.user.CreateUserTest@3646a422]" started-at="2025-07-03T23:55:38 CDT" name="createUser" finished-at="2025-07-03T23:55:41 CDT" duration-ms="3627" status="PASS">
+        <test-method signature="createUser_lombokbuilder()[pri:0, instance:com.qa.user.CreateUserTest@750e2b97]" started-at="2025-07-04T16:29:57 CDT" name="createUser_lombokbuilder" finished-at="2025-07-04T16:30:03 CDT" duration-ms="5529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
+        </test-method> <!-- createUser_lombokbuilder -->
       </class> <!-- com.qa.user.CreateUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

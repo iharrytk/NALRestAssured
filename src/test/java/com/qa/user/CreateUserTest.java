@@ -70,5 +70,62 @@ public class CreateUserTest {
 		
 		
 	}
+	
+	@Test
+	public void createUser_lombokbuilder() {
+		
+		
+		
+		RestAssured.baseURI="https://gorest.co.in";
+		
+		User userrequest=new User.UserBuilder()
+				.name("jay")
+				.email(getRandonEmail())
+				.gender("female")
+				.status("active")
+				.build();
+		
+		
+		Response response=RestAssured.given()
+			.contentType(ContentType.JSON)
+			.header("Authorization", "Bearer 177ad5140ea25bcba6fb5629bca244944bb45d48d68025c985cc7711aee7a597")
+			.body(userrequest)
+			.when()
+			.post("/public/v2/users");
+		
+		Integer userid=response.jsonPath().get("id");
+		System.out.println("The user that has been posted has the id:"+userid);
+		
+		//GET API to get the same userid:
+		Response getresponse=RestAssured.given()
+		.contentType(ContentType.JSON)
+		.header("Authorization", "Bearer 177ad5140ea25bcba6fb5629bca244944bb45d48d68025c985cc7711aee7a597")
+		.when().log().all()
+		.get("/public/v2/users/"+userid);
+		
+		System.out.println(getresponse.asPrettyString());
+		
+		
+		
+		//deserialization
+		ObjectMapper mapper=new ObjectMapper();
+		try {
+			User userresponse=mapper.readValue(getresponse.getBody().asString(), User.class);
+			
+			Assert.assertEquals(userresponse.getId(), userid);
+			Assert.assertEquals(userresponse.getName(), userrequest.getName());
+		} catch (JsonMappingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+			
+			
+		
+		
+	}
 
 }
