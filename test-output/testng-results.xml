@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-27T00:02:19 CDT" name="Default suite" finished-at="2025-05-27T00:02:21 CDT" duration-ms="2012">
+  <suite started-at="2025-07-03T23:55:38 CDT" name="Default suite" finished-at="2025-07-03T23:55:41 CDT" duration-ms="3652">
     <groups>
     </groups>
-    <test started-at="2025-05-27T00:02:19 CDT" name="Default test" finished-at="2025-05-27T00:02:21 CDT" duration-ms="2012">
-      <class name="com.product.api.ProductApiGetCallLombok">
-        <test-method signature="productGet()[pri:0, instance:com.product.api.ProductApiGetCallLombok@738dc9b]" started-at="2025-05-27T00:02:19 CDT" name="productGet" finished-at="2025-05-27T00:02:21 CDT" duration-ms="1982" status="PASS">
+    <test started-at="2025-07-03T23:55:38 CDT" name="Default test" finished-at="2025-07-03T23:55:41 CDT" duration-ms="3652">
+      <class name="com.qa.user.CreateUserTest">
+        <test-method signature="createUser()[pri:0, instance:com.qa.user.CreateUserTest@3646a422]" started-at="2025-07-03T23:55:38 CDT" name="createUser" finished-at="2025-07-03T23:55:41 CDT" duration-ms="3627" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productGet -->
-      </class> <!-- com.product.api.ProductApiGetCallLombok -->
+        </test-method> <!-- createUser -->
+      </class> <!-- com.qa.user.CreateUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
