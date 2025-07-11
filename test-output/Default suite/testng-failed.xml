@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.user.CreateUserTest">
+      <class name="PUTAPIs.PutUserTest">
         <methods>
-          <include name="createUser"/>
+          <include name="updateUser_PUTcall"/>
         </methods>
-      </class> <!-- com.qa.user.CreateUserTest -->
+      </class> <!-- PUTAPIs.PutUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
